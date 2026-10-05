@@ -1351,9 +1351,9 @@ label:focus-visible {
 }
 
 .club-detail-visual img {
-width: 110px;
-height: 110px;
-object-fit: contain;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
 }
 
 .club-card .club-visual {
@@ -1362,13 +1362,7 @@ object-fit: contain;
 }
 
 .club-card .club-visual img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  max-height: none;
-  padding: 1rem;
-  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO 메타 태그 -->
+  <title>프로젝트 상세 | S.C.P</title>
+  <meta name="description" content="S.C.P 프로젝트 상세 정보">
+  <meta name="keywords" content="S.C.P, 정보보안, 동아리, 화이트해커, CTF, 보안 연구">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="프로젝트 상세 | S.C.P">
+  <meta property="og:description" content="S.C.P 프로젝트 상세 정보">
+  <meta property="og:image" content="assets/images/lab.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#080D16">
+  <link rel="icon" type="image/png" href="assets/logos/favicon.png">
+  <!-- 웹폰트 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap">
+  <!-- 스타일 (공통 → 컴포넌트 → 반응형 순서) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="project-detail">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <!-- 공통 헤더: js/navigation.js 가 채워 넣습니다 -->
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">cat project.md</p>
+        <h1 id="detail-title">Project</h1>
+        <p id="detail-meta"></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" id="project-detail"></div>
+    </section>
+  </main>
+
+  <!-- 공통 푸터: js/navigation.js 가 채워 넣습니다 -->
+  <footer id="site-footer"></footer>
+
+  <!-- 스크립트: 설정/데이터 → 내비게이션 → 기능 순서로 불러옵니다 -->
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

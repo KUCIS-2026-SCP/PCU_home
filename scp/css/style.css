@@ -1,0 +1,77 @@
+/* =========================================================
+   S.C.P 공통 스타일
+   - 색상/폰트는 아래 :root 변수만 바꾸면 사이트 전체에 반영됩니다.
+   ========================================================= */
+:root {
+  --bg: #080D16;          /* 기본 배경 */
+  --bg-2: #101827;        /* 보조 배경 */
+  --card: #151F30;        /* 카드 배경 */
+  --accent: #00D4FF;      /* 메인 강조색 */
+  --accent-2: #38BDF8;    /* 보조 강조색 */
+  --text: #F8FAFC;        /* 기본 텍스트 */
+  --text-2: #94A3B8;      /* 보조 텍스트 */
+  --line: rgba(148, 163, 184, 0.14);
+  --radius: 10px;
+  --max: 1200px;
+  --font: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --header-h: 68px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font: inherit; cursor: pointer; }
+
+/* 키보드 포커스 표시 (접근성) */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+/* 본문 바로가기 링크 */
+.skip-link {
+  position: absolute; left: -9999px; top: 8px; z-index: 200;
+  background: var(--accent); color: var(--bg); padding: 8px 14px; border-radius: 6px;
+}
+.skip-link:focus { left: 8px; }
+
+.container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+main { padding-top: var(--header-h); }
+
+.section { padding: 96px 0; }
+.section.alt { background: var(--bg-2); }
+
+/* 섹션 제목 (터미널 프롬프트 스타일) */
+.eyebrow { font-family: var(--mono); font-size: .85rem; color: var(--accent); letter-spacing: .08em; }
+.eyebrow::before { content: "$ "; color: var(--text-2); }
+.section-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; letter-spacing: -.02em; margin: 8px 0 14px; }
+.section-desc { color: var(--text-2); max-width: 680px; }
+.section-head { margin-bottom: 48px; }
+
+/* 서브페이지 상단 배너 */
+.page-hero { padding: 80px 0 56px; border-bottom: 1px solid var(--line); background:
+  linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 40px 40px,
+  linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 40px 40px, var(--bg); }
+.page-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -.02em; margin-top: 8px; }
+.page-hero p { color: var(--text-2); margin-top: 10px; max-width: 640px; }
+
+.muted { color: var(--text-2); }
+.mono { font-family: var(--mono); }
+
+/* 스크롤 등장 효과 */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* 움직임 줄이기 설정 존중 */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

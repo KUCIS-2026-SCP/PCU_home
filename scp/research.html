@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO 메타 태그 -->
+  <title>RESEARCH | S.C.P</title>
+  <meta name="description" content="S.C.P의 연구 분야: 모의침투, 디지털 포렌식, 악성코드 분석, 네트워크·웹 보안, 위협 탐지">
+  <meta name="keywords" content="S.C.P, 정보보안, 동아리, 화이트해커, CTF, 보안 연구">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RESEARCH | S.C.P">
+  <meta property="og:description" content="S.C.P의 연구 분야: 모의침투, 디지털 포렌식, 악성코드 분석, 네트워크·웹 보안, 위협 탐지">
+  <meta property="og:image" content="assets/images/lab.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#080D16">
+  <link rel="icon" type="image/png" href="assets/logos/favicon.png">
+  <!-- 웹폰트 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap">
+  <!-- 스타일 (공통 → 컴포넌트 → 반응형 순서) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="research">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <!-- 공통 헤더: js/navigation.js 가 채워 넣습니다 -->
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">ls ./research</p>
+        <h1>Research Areas</h1>
+        <p>S.C.P가 학습하고 연구하는 주요 보안 분야입니다. (초기 구성 예시 — research.html에서 수정 가능)</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Penetration Testing</h3><p class="ko">모의침투 및 취약점 분석</p><p>실제 공격자의 관점에서 시스템을 점검하고, 발견한 취약점의 원인과 대응 방안을 연구합니다.</p><a class="card-link" href="projects.html?category=web">관련 프로젝트 →</a></article>
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h3>Digital Forensics</h3><p class="ko">디지털 포렌식 및 침해사고 분석</p><p>디스크·메모리·로그 등 디지털 증거를 수집·분석하여 침해사고의 경위를 재구성합니다.</p><a class="card-link" href="projects.html?category=forensics">관련 프로젝트 →</a></article>
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 7V3M4 11h3M17 11h3M4 17h3M17 17h3M9 4l1.5 2M15 4l-1.5 2"/></svg></div><h3>Malware Analysis</h3><p class="ko">악성코드 분석 및 대응</p><p>정적·동적 분석 기법으로 악성코드의 동작 원리를 파악하고 탐지·대응 방법을 연구합니다.</p><a class="card-link" href="projects.html?category=malware">관련 프로젝트 →</a></article>
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-6 5M12 12l6 5"/></svg></div><h3>Network Security</h3><p class="ko">네트워크 보안 및 프로토콜 분석</p><p>패킷과 프로토콜을 분석하여 네트워크 위협을 이해하고 안전한 네트워크 구성을 연구합니다.</p><a class="card-link" href="projects.html?category=network">관련 프로젝트 →</a></article>
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div><h3>Web Security</h3><p class="ko">웹 취약점 분석 및 보안 연구</p><p>OWASP Top 10 등 주요 웹 취약점을 실습하고, 안전한 웹 애플리케이션 개발 방법을 공유합니다.</p><a class="card-link" href="projects.html?category=web">관련 프로젝트 →</a></article>
+          <article class="card reveal"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Threat Detection</h3><p class="ko">위협 탐지 및 보안 로그 분석</p><p>보안 로그와 이벤트를 분석하여 이상 징후를 탐지하고 탐지 룰을 설계합니다.</p><a class="card-link" href="projects.html?category=other">관련 프로젝트 →</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 공통 푸터: js/navigation.js 가 채워 넣습니다 -->
+  <footer id="site-footer"></footer>
+
+  <!-- 스크립트: 설정/데이터 → 내비게이션 → 기능 순서로 불러옵니다 -->
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

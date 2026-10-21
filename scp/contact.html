@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO 메타 태그 -->
+  <title>CONTACT | S.C.P</title>
+  <meta name="description" content="S.C.P 공식 인스타그램, 학과 홈페이지, GitHub, 이메일 및 가입 신청 안내">
+  <meta name="keywords" content="S.C.P, 정보보안, 동아리, 화이트해커, CTF, 보안 연구">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CONTACT | S.C.P">
+  <meta property="og:description" content="S.C.P 공식 인스타그램, 학과 홈페이지, GitHub, 이메일 및 가입 신청 안내">
+  <meta property="og:image" content="assets/images/lab.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#080D16">
+  <link rel="icon" type="image/png" href="assets/logos/favicon.png">
+  <!-- 웹폰트 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap">
+  <!-- 스타일 (공통 → 컴포넌트 → 반응형 순서) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="contact">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <!-- 공통 헤더: js/navigation.js 가 채워 넣습니다 -->
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">ping scp</p>
+        <h1>Contact</h1>
+        <p>S.C.P 공식 채널과 가입 안내입니다.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container grid grid-2">
+        <article class="card contact-card reveal">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          <h3>Instagram</h3><p class="ko" data-text="instagramHandle"></p>
+          <p>활동 소식과 모집 공지를 가장 빠르게 확인할 수 있습니다.</p>
+          <a class="btn btn-primary" data-link="instagram">Visit Instagram</a>
+        </article>
+        <article class="card contact-card reveal">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-6 9 6M5 10v9h14v-9M9 19v-5h6v5"/></svg></div>
+          <h3>Department</h3><p class="ko" data-text="departmentName"></p>
+          <p>학과 공식 홈페이지에서 학과 소식을 확인하세요.</p>
+          <a class="btn" data-link="department">Visit Department Website</a>
+        </article>
+        <article class="card contact-card reveal">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 00-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></div>
+          <h3>GitHub</h3><p>동아리 프로젝트 저장소</p>
+          <a class="btn" data-link="github">Visit GitHub</a>
+        </article>
+        <article class="card contact-card reveal">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <h3>Email</h3><p class="ko" data-text="email"></p><p>문의 사항은 이메일로 보내주세요.</p>
+          <a class="btn" data-link="email">Send Email</a>
+        </article>
+      </div>
+    </section>
+    <section class="section alt" id="join">
+      <div class="container">
+        <div class="cta reveal">
+          <p class="eyebrow">./join --community</p>
+          <h2 class="section-title">동아리 가입 신청</h2>
+          <p class="muted">모집 기간과 일정은 인스타그램 공지를 확인해주세요. 보안에 관심 있는 누구나 환영합니다.</p>
+          <div class="btn-group"><a class="btn btn-primary" data-link="joinForm">가입 신청하기</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 공통 푸터: js/navigation.js 가 채워 넣습니다 -->
+  <footer id="site-footer"></footer>
+
+  <!-- 스크립트: 설정/데이터 → 내비게이션 → 기능 순서로 불러옵니다 -->
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

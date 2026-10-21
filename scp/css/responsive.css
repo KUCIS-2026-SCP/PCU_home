@@ -1,0 +1,32 @@
+/* =========================================================
+   반응형 스타일 (태블릿 / 모바일)
+   ========================================================= */
+
+/* 태블릿 이하 */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .hero-grid, .split { grid-template-columns: 1fr; gap: 40px; }
+
+  /* 햄버거 메뉴 */
+  .nav-toggle { display: block; }
+  .nav-menu {
+    position: fixed; top: var(--header-h); left: 0; right: 0; flex-direction: column; gap: 0;
+    background: var(--bg-2); border-bottom: 1px solid var(--line); padding: 8px 16px 16px;
+    display: none;
+  }
+  .nav-menu.open { display: flex; }
+  .nav-menu a { padding: 14px 8px; border-bottom: 1px solid var(--line); border-radius: 0; }
+}
+
+/* 모바일 */
+@media (max-width: 640px) {
+  .section { padding: 64px 0; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: 0; }
+  .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .terminal-body { font-size: .75rem; min-height: 240px; }
+  .container { padding: 0 18px; }
+}

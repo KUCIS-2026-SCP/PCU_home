@@ -58,6 +58,30 @@
 .hero .lead { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
 .hero .desc { color: var(--text-2); margin-bottom: 32px; max-width: 520px; }
 
+/* ---------- Three.js interactive security network ---------- */
+.hero-security-canvas { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .76; }
+.hero-security-canvas canvas { width: 100%; height: 100%; display: block; }
+.hero-grid { position: relative; z-index: 2; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(8,13,22,.98) 0%, rgba(8,13,22,.82) 42%, rgba(8,13,22,.2) 72%, rgba(8,13,22,.58) 100%);
+}
+.hero::after {
+  content: "SECURE NODE // ACTIVE"; position: absolute; right: 24px; bottom: 20px; z-index: 3;
+  font: 600 .62rem/1 var(--mono); letter-spacing: .16em; color: rgba(0,212,255,.58);
+}
+.hero .terminal { position: relative; backdrop-filter: blur(12px); background: rgba(7, 16, 29, .76); }
+.terminal::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(0deg, transparent 0 4px, rgba(255,255,255,.018) 5px);
+}
+.card { position: relative; overflow: hidden; }
+.card::after {
+  content: ""; position: absolute; width: 120px; height: 120px; right: -80px; top: -80px;
+  border: 1px solid rgba(0,212,255,.14); transform: rotate(45deg); transition: transform .35s ease, border-color .35s ease; pointer-events: none;
+}
+.card:hover::after { transform: rotate(45deg) translate(-12px, 12px); border-color: rgba(0,212,255,.4); }
+
 /* ---------- 터미널 UI ---------- */
 .terminal { background: #0B1220; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: 0 30px 60px -30px rgba(0,0,0,.8); }
 .terminal-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--bg-2); border-bottom: 1px solid var(--line); }

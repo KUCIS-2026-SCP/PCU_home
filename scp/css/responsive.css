@@ -7,6 +7,7 @@
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .hero-grid, .split { grid-template-columns: 1fr; gap: 40px; }
+  .hero::before { background: rgba(8,13,22,.72); }
 
   /* 햄버거 메뉴 */
   .nav-toggle { display: block; }
@@ -29,4 +30,5 @@
   .footer-grid { grid-template-columns: 1fr; }
   .terminal-body { font-size: .75rem; min-height: 240px; }
   .container { padding: 0 18px; }
+  .hero-security-canvas { opacity: .5; }
 }
